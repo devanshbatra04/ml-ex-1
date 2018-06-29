@@ -14,7 +14,10 @@ J = 0;
 %               You should set J to the cost.
 
 
-
+temp = X * theta - y;
+tnew = temp .^ 2;
+tnew = sum(tnew);
+J = tnew / (2 * m);
 
 
 % =========================================================================
